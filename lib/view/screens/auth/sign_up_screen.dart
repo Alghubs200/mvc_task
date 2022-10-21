@@ -36,9 +36,11 @@ class SignUpScreen extends StatelessWidget {
               Stack(
                 children: [
                   CircleAvatar(
+                    child: Icon(Icons.edit),
+
                     radius: 45,
-                    backgroundImage: NetworkImage(
-                        'https://as1.ftcdn.net/v2/jpg/03/91/19/22/1000_F_391192211_2w5pQpFV1aozYQhcIw3FqA35vuTxJKrB.jpg'),
+                    // backgroundImage: NetworkImage(
+                    //     'https://as1.ftcdn.net/v2/jpg/03/91/19/22/1000_F_391192211_2w5pQpFV1aozYQhcIw3FqA35vuTxJKrB.jpg'),
                   ),
                   Container(
                     decoration: BoxDecoration(
