@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:mvc_task/view/widgets/glith_effect.dart';
 
 import '../../widgets/text_input.dart';
 
@@ -17,12 +18,17 @@ class LogininScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'WELCOME',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 27),
+            GlithEffect(
+              child: const Text(
+                'WELCOME',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 27),
+              ),
+            ),
+            SizedBox(
+              height: 25,
             ),
             SizedBox(
               height: 25,
@@ -55,7 +61,8 @@ class LogininScreen extends StatelessWidget {
               child: Container(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      onPrimary: Colors.black, backgroundColor: Colors.purple),
+                      onPrimary: Colors.black,
+                      backgroundColor: Colors.green[400]),
                   onPressed: () {},
                   child: Container(
                       child: Text(
